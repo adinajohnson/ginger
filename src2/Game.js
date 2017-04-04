@@ -48,8 +48,9 @@ BasicGame.Game.prototype = {
             found.add(tile);
             found.add(uncovered[0]); //removes from unmatched group
             if (tileGroup.length == 0) { //prints congratulations if all tiles are matched
-              style = { font: "bold 80px 'Passion One'", fill: "#000", boundsAlignH: "center", boundsAlignV: "middle" };
-              text = this.game.add.text(5, 480, "CONGRATULATIONS!", style);
+              //style = { font: "bold 80px 'Passion One'", fill: "#000", boundsAlignH: "center", boundsAlignV: "middle" };
+              //text = this.game.add.text(5, 480, "CONGRATULATIONS!", style);
+              text = this.game.add.sprite(5, 480, "congratulations", "congratulations.png");
               var playButton = this.game.add.button(307, 591, "restart", this.restart, this);
               playButton.anchor.setTo(0.5, 0.5);
             }

@@ -15,6 +15,7 @@ BasicGame.Preloader.prototype = {
 		this.load.image('play', 'images/play.png');
 		this.load.image('restart', 'images/restart.png');
 		this.load.image('title', 'images/title.png');
+		this.load.image('congratulations', 'images/congratulations.png');
 
 	},
 
